@@ -1,0 +1,19 @@
+{
+  "name": "nest-react-heroku",
+  "version": "1.0.0",
+  "description": "nest-react-heroku app boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathan-folsom/nest-react-heroku.git"
+  },
+  "author": "nate folsom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathan-folsom/nest-react-heroku/issues"
+  },
+  "homepage": "https://github.com/nathan-folsom/nest-react-heroku#readme"
+}
