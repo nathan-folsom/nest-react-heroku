@@ -6,8 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "heroku-prebuild": "rimraf dist",
-    "prebuild": "rimraf dist",
+    "postinstall": "rimraf dist && npm run build && npm run postbuild",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
@@ -20,7 +19,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "heroku-postbuild": "npm run start:prod && cd ../client && yarn && yarn run build"
+    "postbuild": "npm run start:prod && cd ../client && yarn && yarn run build"
   },
   "dependencies": {
     "@nestjs/cli": "^7.0.0",
