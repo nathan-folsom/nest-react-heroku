@@ -6,6 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "heroku-prebuild": "rimraf dist",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -22,6 +23,7 @@
     "heroku-postbuild": "npm run start:prod && cd ../client && yarn && yarn run build"
   },
   "dependencies": {
+    "@nestjs/cli": "^7.0.0",
     "@nestjs/common": "^7.0.0",
     "@nestjs/core": "^7.0.0",
     "@nestjs/platform-express": "^7.0.0",
@@ -31,7 +33,6 @@
     "rxjs": "^6.5.4"
   },
   "devDependencies": {
-    "@nestjs/cli": "^7.0.0",
     "@nestjs/schematics": "^7.0.0",
     "@nestjs/testing": "^7.0.0",
     "@types/express": "^4.17.3",
