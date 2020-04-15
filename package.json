@@ -5,7 +5,7 @@
   "main": "server/dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd client"
+    "start": "cd client && npm install && cd ../server && npm install"
   },
   "repository": {
     "type": "git",
