@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/nathan-folsom/nest-react-heroku#readme",
   "engines": {
-    "node": "10.19.0"
+    "node": "10.19.0",
+    "yarn": "1.22.4"
   }
 }
