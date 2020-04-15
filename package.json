@@ -2,7 +2,7 @@
   "name": "nest-react-heroku",
   "version": "1.0.0",
   "description": "nest-react-heroku app boilerplate",
-  "main": "index.js",
+  "main": "server/dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd server && npm install && npm run start"
